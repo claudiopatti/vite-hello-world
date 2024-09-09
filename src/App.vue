@@ -1,29 +1,36 @@
 <script>
 // 1) Importazione del componente 
 import AppTitle from './components/AppTitle.vue'
+import AppHero from './components/AppHero.vue'
 
   export default {
   data() {
     return { 
-        message: 'Proviamo ad implementare una Immagine'
+        message: 'Proviamo ad implementare un Immagine'
     }
   },
   // 2) Dichiarizone del componente
   components: {
-    AppTitle
+    AppTitle,
+    AppHero
   },
 }
 </script>
 
 <template>
     <!-- Utilizzo del componente  -->
-     <AppTitle />
+  <AppTitle />
+
+  
   <div class="tittle">
     <h2>
       {{ message }}
     </h2>
+    
   </div>
-
+  
+  <AppHero />
+  
 </template>
 
 <style scoped>
@@ -34,4 +41,5 @@ import AppTitle from './components/AppTitle.vue'
 .tittle > h2 {
   color: lightcoral;
 }
+
 </style>
