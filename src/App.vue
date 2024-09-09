@@ -5,7 +5,7 @@ import AppTitle from './components/AppTitle.vue'
   export default {
   data() {
     return { 
-        message: 'La mia prima app con Vite!'
+        message: 'Proviamo ad implementare una Immagine'
     }
   },
   // 2) Dichiarizone del componente
